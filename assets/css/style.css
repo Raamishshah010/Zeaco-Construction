@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #FABC3D;
+    --secondary-color: #2B2D37;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 62.2%;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.container-fluid{
+    padding: 0 6rem !important;
+}
+
+.header_nav-top {
+    width: 100%;
+    height: 10vh;
+    background-color: #2B2D37;
+    color: #aeaeae;
+    font-weight: 300;
+}
+
+
+.header_nav-top .contactInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.header_nav-top .contactInfo .contactInfo_info {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.header_nav-top .contactInfo .contactInfo_info a {
+    color: #aeaeae;
+    transition: .4s ease-in-out;
+    text-decoration: none;
+}
+
+.header_nav-top .contactInfo .contactInfo_info a.active {
+    color: #fff;
+    transition: .4s ease-in-out;
+    text-decoration: none;
+}
+
+
+.header_nav-top .contactInfo .contactInfo_info a:hover {
+    color: var(--primary-color);
+
+}
+
+/* header_nav_mid */
+
+.header_nav_mid {
+    transform: translateY(-1rem);
+}
+
+
+.header_nav_mid .container {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    /* height: 10vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.header_nav_mid .container .header_nav_mid_links ul {
+    margin-top: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.header_nav_mid .container .header_nav_mid_links ul li {
+
+    list-style: none;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* HERO SECTION */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://template.hasthemes.com/brenda/brenda/assets/img/hero-slider/home2-slider1-image2.webp');
+    
+    z-index: -1;
+}
