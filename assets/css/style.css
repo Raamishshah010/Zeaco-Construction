@@ -16,10 +16,11 @@
 body {
     font-size: 62.2%;
     font-family: 'Rajdhani', sans-serif;
+    overflow-x: hidden;
 }
 
 
-.container-fluid{
+.container-fluid {
     padding: 0 6rem !important;
 }
 
@@ -105,10 +106,33 @@ body {
 
 /* HERO SECTION */
 
-.header{
+.header {
     width: 100%;
     height: 100vh;
     background-image: url('https://template.hasthemes.com/brenda/brenda/assets/img/hero-slider/home2-slider1-image2.webp');
-    
-    z-index: -1;
+    position: relative;
+    padding-bottom: 10rem;
+
+    z-index: 1;
 }
+
+.hero{
+    /* padding-bottom: 120rem; */
+}
+
+.heroMainImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 2rem;
+    transform: translate(10px, 10px);
+    width: 35rem;
+
+}
+
+.heroMainImg img{
+    width: 100%;
+    height: 500px;
+}
+
